@@ -1,0 +1,399 @@
+/*//////////////////////-CABECERA-//////////////////////////////*/
+@font-face {
+    font-family:tipo;
+    src: url('tipografia/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+html{
+    font-family: tipo;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header{
+    top: 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+}
+header svg {
+    width: 120px;
+    padding-left: 30px;
+}
+header h1 {
+    font-weight: 350;
+    color: white;
+}
+header h4 {
+    padding-right: 30px;
+    color: white;
+    font-weight: 350;
+}
+/*//////////////////////-SECCIÓN DE INTRODUCCIÓN-//////////////////////////////*/
+.sec-intro{
+    width: 100%;
+    background-color: -webkit-linear-gradient(46deg, #000000,#021026,#062780);background: linear-gradient(46deg, #000000,#021026,#062780);
+    display: flex;
+    position: relative;
+    height: 600px;
+}
+.sec-intro div{
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 7%;
+    width: 35%;
+}
+.sec-intro h2{
+    color: white;
+}
+.sec-intro P{
+    color: white;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.boton{
+    background-color: #ffffff;
+    border: none;
+    display: inline;
+    text-transform: uppercase;
+    margin-top: 10px; 
+    padding: 10px 25px;
+}
+.boton a {
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-weight: 580;
+    word-spacing: 0.15em;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.sec-intro img{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+/*//////////////////////-SECCIÓN AGENDA DEL EVENTO-//////////////////////////////*/
+
+.sec-agenda{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    background-color: black;
+}
+.sec-agenda h2{
+    color: white;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabla table {
+    width: 50%;
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    text-align: center;
+    align-items: center;
+}
+.tabla table tbody tr th{
+    font-weight:400;
+}
+
+.tabla table thead tr th{
+    width: 0px;
+}
+.tabla table tbody tr th {
+    transition: 0.5s;
+}
+.tabla table tbody tr th:hover{
+    background-color: #ADD8E6;
+}
+
+.tabla table thead tr th{
+    padding: 20px;
+    background-color: #c2c2c2;
+}
+.tabla table tbody tr th,td{
+    padding: 20px;
+}
+
+/*//////////////////////-SECCIÓN DE REGISTRO-//////////////////////////////*/
+#sec-registro{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    background: -webkit-linear-gradient(180deg, #000000,#000000,#062780);
+    background: linear-gradient(180deg, #000000,#000000,#062780);
+}
+
+#sec-registro h2 {
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.formulario form {
+    display: block;
+    width: 300px;
+    padding: 5em 5em;
+    background-color: white;
+}
+  
+.formulario form ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.formulario form ul li label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+.formulario form ul li input{
+    display: block;
+    font: 1em;
+    width: 200px;
+    box-sizing: border-box;
+    background-color: #ececec;
+    color: rgb(0, 0, 0);
+    border:none;
+}
+
+.formulario img{
+    width: 380px;
+    height: 625px;
+}
+.boton-reg{
+    background-color: #ececec;
+    border: none;
+    display: inline;
+    text-transform: uppercase;
+    margin-top: 10px; 
+    padding: 10px 25px;
+}
+.boton-reg a {
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-weight: 580;
+    word-spacing: 0.15em;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.seleccion {
+    margin-bottom: 40px;
+}
+  
+/*//////////////////////-PIE DE PÁGINA-//////////////////////////////*/
+footer{
+    width: 100%;
+    background:  #000000;
+    position: absolute;
+}
+.contenedor-foot{                                          
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-contacto p{
+    color: #ffffff;
+}
+.contenedor-foot div {
+    margin: 10px;
+}
+.social {
+    
+}
+.social a svg {
+    float: left;
+    display: block;
+    width: 40px;
+    margin-left: 20px;
+}
+.mapa iframe{
+    margin-left: 70px;
+    width: 100%;
+    height: 120px;
+}
+
+/*Tablets: entre 768 y 1024 píxeles.*/
+@media screen and (max-width: 1024px) and (min-width:768px){
+    /*//////////////////////-SECCIÓN DE INTRODUCCIÓN-//////////////////////////////*/
+    .sec-intro div{
+        margin-top: 2%;
+    }
+    /*//////////////////////-SECCIÓN AGENDA DEL EVENTO-//////////////////////////////*/
+    
+    .sec-agenda{
+        width: 100%;
+        background-color: black;
+    }
+    .sec-agenda h2{
+        color: white;
+        font-size: 22px;
+    }
+    .tabla table {
+        width: 100%;
+        background-color: white;
+    }
+    .tabla table thead{
+        display: none;
+    }
+    .tabla table tbody tr {
+        text-align: center;
+    }
+    .tabla table tbody tr th,td{
+        font-size: 10px;
+        display: block;
+    }
+    .tabla table tbody tr th{
+        background-color: #e2e2e2;
+        font-size: 15px;
+    }
+    td:nth-of-type(1):before {
+        content: "Ponente ";
+        font-weight: bold;
+    }
+    td:nth-of-type(2):before {
+        content: "Horario ";
+        font-weight: bold;
+    }
+
+    /*//////////////////////-SECCIÓN DE REGISTRO-//////////////////////////////*/
+    
+    .formulario img{
+        display: none;
+    }
+    /*//////////////////////-PIE DE PÁGINA-//////////////////////////////*/
+    .contenedor-foot{                                          
+        display: inline-block;
+    }
+    .social a svg {
+        float: left;
+        display: block;
+        width: 40px;
+        margin-left: 150px;
+    }
+    .mapa iframe{
+        width: 500px;
+    }
+}
+
+/*Móviles: entre 320 y 480 píxeles.*/
+@media screen and (max-width: 480px) and (min-width: 320px){
+    header h1 {
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header h4 {
+        font-size: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    /*//////////////////////-SECCIÓN DE INTRODUCCIÓN-//////////////////////////////*/
+    .sec-intro{
+        width: 100%;
+        display: inline-block;
+        height:600px;
+    }
+    .sec-intro div{
+        margin-top: 7%;
+        width: 100%;
+    }
+    .sec-intro h2{
+        color: white;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .sec-intro P{
+        color: white;
+        font-size: 17px;
+        margin-right: 60px;
+    }
+    .sec-intro img{
+        display: none;
+    }
+    
+    /*//////////////////////-SECCIÓN AGENDA DEL EVENTO-//////////////////////////////*/
+    
+    .sec-agenda{
+        width: 100%;
+        background-color: black;
+    }
+    .sec-agenda h2{
+        color: white;
+        font-size: 22px;
+    }
+    .tabla table {
+        width: 100%;
+        background-color: white;
+    }
+    .tabla table thead{
+        display: none;
+    }
+    .tabla table tbody tr {
+        text-align: center;
+    }
+    .tabla table tbody tr th,td{
+        font-size: 10px;
+        display: block;
+    }
+    .tabla table tbody tr th{
+        background-color: #e2e2e2;
+        font-size: 15px;
+    }
+    td:nth-of-type(1):before {
+        content: "Ponente ";
+        font-weight: bold;
+    }
+    td:nth-of-type(2):before {
+        content: "Horario ";
+        font-weight: bold;
+    }
+
+    /*//////////////////////-SECCIÓN DE REGISTRO-//////////////////////////////*/
+    
+    .formulario img{
+        display: none;
+    }
+    /*//////////////////////-PIE DE PÁGINA-//////////////////////////////*/
+    .contenedor-foot{                                          
+        display: inline-block;
+    }
+}
